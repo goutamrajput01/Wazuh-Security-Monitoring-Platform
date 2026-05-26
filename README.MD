@@ -104,7 +104,59 @@ egrep -c '(vmx|svm)' /proc/cpuinfo
 # Check in Task Manager → Performance → CPU
 # Look for "Virtualization: Enabled"
 ```
+## Installation
 
+...installation steps...
+
+---
+
+## 📸 Screenshots
+
+The following screenshots demonstrate the deployment process and major security monitoring features available in the Wazuh platform.
+
+### 🔐 Wazuh Login Page
+![Wazuh Login](images/login-page.png)
+
+Initial authentication screen used to access the Wazuh dashboard.
+
+---
+
+### 📊 Dashboard Overview
+![Dashboard Overview](images/dashboard-overview.png)
+
+Main dashboard displaying endpoint status, alert summaries, and real-time security monitoring information.
+
+---
+
+### 💻 Agent Deployment
+![Agent Deployment](images/agent-deployment.png)
+
+Deployment and registration of a Linux endpoint agent with the Wazuh Manager.
+
+---
+
+### 📁 File Integrity Monitoring (FIM)
+![FIM Dashboard](images/fim-dashboard.png)
+
+File Integrity Monitoring dashboard used to detect and track file modifications across monitored systems.
+
+---
+
+### 🛡️ Vulnerability Detection Dashboard
+![Vulnerability Dashboard](images/vulnerability-dashboard.png)
+
+Displays discovered vulnerabilities, CVE information, severity scores, and affected packages.
+
+---
+
+### 🎯 MITRE ATT&CK Dashboard
+![MITRE Dashboard](images/mitre-dashboard.png)
+
+Visualization of security events mapped to MITRE ATT&CK tactics and techniques for threat analysis.
+
+---
+
+## Post-Installation Configuration
 ---
 
 ## Installation
