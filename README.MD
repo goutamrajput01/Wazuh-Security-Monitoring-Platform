@@ -110,49 +110,6 @@ egrep -c '(vmx|svm)' /proc/cpuinfo
 
 ---
 
-## 📸 Screenshots
-
-The following screenshots demonstrate the deployment process and major security monitoring features available in the Wazuh platform.
-
-### 🔐 Wazuh Login Page
-![Wazuh Login](images/login-page.png)
-
-Initial authentication screen used to access the Wazuh dashboard.
-
----
-
-### 📊 Dashboard Overview
-![Dashboard Overview](images/dashboard-overview.png)
-
-Main dashboard displaying endpoint status, alert summaries, and real-time security monitoring information.
-
----
-
-### 💻 Agent Deployment
-![Agent Deployment](images/agent-deployment.png)
-
-Deployment and registration of a Linux endpoint agent with the Wazuh Manager.
-
----
-
-### 📁 File Integrity Monitoring (FIM)
-![FIM Dashboard](images/fim-dashboard.png)
-
-File Integrity Monitoring dashboard used to detect and track file modifications across monitored systems.
-
----
-
-### 🛡️ Vulnerability Detection Dashboard
-![Vulnerability Dashboard](images/vulnerability-dashboard.png)
-
-Displays discovered vulnerabilities, CVE information, severity scores, and affected packages.
-
----
-
-### 🎯 MITRE ATT&CK Dashboard
-![MITRE Dashboard](images/mitre-dashboard.png)
-
-Visualization of security events mapped to MITRE ATT&CK tactics and techniques for threat analysis.
 
 ---
 
@@ -331,6 +288,9 @@ All services should show `active (running)`.
 2. Accept the self-signed certificate warning (or install your own certificate)
 3. Login with the admin credentials from installation
 
+![Wazuh Login Page](images/login-page.png)
+
+*Figure: Wazuh dashboard login interface used to authenticate users.*
 ### Dashboard Overview
 
 The main dashboard provides:
@@ -340,6 +300,10 @@ The main dashboard provides:
 - **Security Events:** Recent alerts and notifications
 - **Endpoint Security Modules:** Active monitoring modules
 - **Threat Intelligence:** External threat feeds integration
+
+![Dashboard Overview](images/dashboard-overview.png)
+
+*Figure: Main Wazuh dashboard displaying security events, endpoint status, and monitoring widgets.*
 
 **Initial State:** On first login, you'll see "No agents registered" - this is normal until you deploy agents.
 
@@ -356,6 +320,10 @@ The Wazuh Agent is a lightweight security sensor installed on endpoints that:
 - Performs security configuration checks
 - Detects vulnerabilities in installed packages
 - Sends data securely to the Wazuh Manager
+
+![Agent Deployment](images/agent-deployment.png)
+
+*Figure: Linux endpoint agent deployment and registration.*
 
 ### Deploying Linux Agent (Example: Debian/Ubuntu)
 
@@ -445,12 +413,11 @@ Changed attributes: size, modification time, checksum
 3. Alerts generated with CVE details and severity scores
 
 **Example Detection:**
-```
-Package: openssl 1.1.1f
-Vulnerability: CVE-2021-3711
-Severity: High (CVSS 9.8)
-Description: Buffer overflow in SSL/TLS protocol
-```
+
+![Vulnerability Detection Dashboard](images/vulnerability-dashboard.png)
+
+*Figure: Wazuh Vulnerability Detection dashboard displaying detected CVEs and severity ratings.*
+
 
 **Integration with Package Managers:**
 - Debian/Ubuntu: `dpkg`
@@ -504,6 +471,10 @@ MITRE Tactic: Execution (TA0002)
 MITRE Technique: PowerShell (T1059.001)
 Context: Attacker attempting to execute malicious code
 ```
+
+![MITRE ATTACK Dashboard](images/mitre-dashboard.png)
+
+*Figure: Security events mapped to MITRE ATT&CK techniques.*
 
 ---
 
